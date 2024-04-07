@@ -1,0 +1,3 @@
+FROM docker.io/debian:bullseye-slim
+RUN apt update -qq && apt install -qq -y wget && apt clean && rm -rf /var/lib/apt/lists/*
+RUN wget http://xcal1.vodafone.co.uk/10MB.zip && rm -f 10MB.zip

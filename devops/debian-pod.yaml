@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debian-pod
+  namespace: argo
+spec:
+  containers:
+  - name: debian-container
+    image: debian
+    command: ["sleep", "infinity"]
+
